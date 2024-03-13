@@ -1,11 +1,11 @@
 package model.entity;
 
-import java.sql.Date;
+import java.time.LocalDate;
 
 public class Pessoa {
 
 	private String nome;
-	private Date dataNascimento;
+	private LocalDate dataNascimento;
 	private char sexo;
 	private String cpf;
 	
@@ -13,7 +13,7 @@ public class Pessoa {
 		super();
 	}
 
-	public Pessoa(String nome, Date dataNascimento, char sexo, String cpf) {
+	public Pessoa(String nome, LocalDate dataNascimento, char sexo, String cpf) {
 		super();
 		this.nome = nome;
 		this.dataNascimento = dataNascimento;
@@ -29,11 +29,11 @@ public class Pessoa {
 		this.nome = nome;
 	}
 
-	public Date getDataNascimento() {
+	public LocalDate getDataNascimento() {
 		return dataNascimento;
 	}
 
-	public void setDataNascimento(Date dataNascimento) {
+	public void setDataNascimento(LocalDate dataNascimento) {
 		this.dataNascimento = dataNascimento;
 	}
 
