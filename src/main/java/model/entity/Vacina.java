@@ -5,26 +5,25 @@ import java.time.LocalDate;
 public class Vacina {
 	
 	private int id;
-	private String nome;
+	private String nome; 
 	private String paisOrigem;
+	private Pessoa pesquisadorResponsavel;
+	private LocalDate dataInicioPesquisa;
 	private int estagio;
-	private LocalDate dataInicio;
-	private String nomePesquisadorResponsavel;
 	
-	public Vacina(int id, String nome, String paisOrigem, int estagio, LocalDate dataInicio,
-			String nomePesquisadorResponsavel) {
+	public Vacina() {
+		
+	}
+
+	public Vacina(int id, String nome, String paisOrigem, Pessoa pesquisadorResponsavel, LocalDate dataInicioPesquisa,
+			int estagio) {
 		super();
 		this.id = id;
 		this.nome = nome;
 		this.paisOrigem = paisOrigem;
+		this.pesquisadorResponsavel = pesquisadorResponsavel;
+		this.dataInicioPesquisa = dataInicioPesquisa;
 		this.estagio = estagio;
-		this.dataInicio = dataInicio;
-		this.nomePesquisadorResponsavel = nomePesquisadorResponsavel;
-	}
-	
-	public Vacina() {
-		super();
-		
 	}
 
 	public int getId() {
@@ -51,6 +50,22 @@ public class Vacina {
 		this.paisOrigem = paisOrigem;
 	}
 
+	public Pessoa getPesquisadorResponsavel() {
+		return pesquisadorResponsavel;
+	}
+
+	public void setPesquisadorResponsavel(Pessoa pesquisadorResponsavel) {
+		this.pesquisadorResponsavel = pesquisadorResponsavel;
+	}
+
+	public LocalDate getDataInicioPesquisa() {
+		return dataInicioPesquisa;
+	}
+
+	public void setDataInicioPesquisa(LocalDate dataInicioPesquisa) {
+		this.dataInicioPesquisa = dataInicioPesquisa;
+	}
+
 	public int getEstagio() {
 		return estagio;
 	}
@@ -58,21 +73,4 @@ public class Vacina {
 	public void setEstagio(int estagio) {
 		this.estagio = estagio;
 	}
-
-	public LocalDate getDataInicio() {
-		return dataInicio;
-	}
-
-	public void setDataInicio(LocalDate dataInicio) {
-		this.dataInicio = dataInicio;
-	}
-
-	public String getNomePesquisadorResponsavel() {
-		return nomePesquisadorResponsavel;
-	}
-
-	public void setNomePesquisadorResponsavel(String nomePesquisadorResponsavel) {
-		this.nomePesquisadorResponsavel = nomePesquisadorResponsavel;
-	}
-
 }
