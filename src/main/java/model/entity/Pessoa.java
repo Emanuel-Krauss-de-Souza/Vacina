@@ -9,13 +9,14 @@ public class Pessoa {
 	private LocalDate dataNascimento;
 	private String sexo;
 	private String cpf;
-	private String tipoPessoa;
+	private int tipoPessoa;
+	private Pais pais;
 	
 	public Pessoa() {
 		super();
 	}
 
-	public Pessoa(int id, String nome, LocalDate dataNascimento, String sexo, String cpf, String tipoPessoa) {
+	public Pessoa(int id, String nome, LocalDate dataNascimento, String sexo, String cpf, int tipoPessoa, Pais pais) {
 		super();
 		this.id = id;
 		this.nome = nome;
@@ -66,11 +67,21 @@ public class Pessoa {
 		this.cpf = cpf;
 	}
 
-	public String getTipoPessoa() {
+	public int getTipoPessoa() {
 		return tipoPessoa;
 	}
 
-	public void setTipoPessoa(String tipoPessoa) {
+	public void setTipoPessoa(int tipoPessoa) {
 		this.tipoPessoa = tipoPessoa;
 	}
+
+	public Pais getPais() {
+		return pais;
+	}
+
+	public void setPais(Pais pais) {
+		this.pais = pais;
+	}
+	
+	
 }

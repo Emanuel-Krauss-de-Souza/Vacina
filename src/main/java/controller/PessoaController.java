@@ -37,7 +37,7 @@ public class PessoaController {
 	}
 	
 	@GET
-	@Path("alistar")
+	@Path("/listar")
 	@Consumes(MediaType.APPLICATION_JSON)
 	@Produces(MediaType.APPLICATION_JSON)
 	public ArrayList<Pessoa> listarTodos(){

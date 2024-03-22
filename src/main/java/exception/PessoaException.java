@@ -1,4 +1,4 @@
-package exception;
+ package exception;
 
 public class PessoaException extends Exception {
 

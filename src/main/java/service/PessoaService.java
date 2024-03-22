@@ -13,12 +13,12 @@ public class PessoaService {
 
 	public Pessoa salvar(Pessoa novaPessoa) throws PessoaException {
 		if (novaPessoa.getNome() == null || novaPessoa.getNome().isEmpty() 
-				|| novaPessoa.getDataNascimento() == null
-				|| novaPessoa.getSexo() == null || novaPessoa.getSexo().isEmpty() 
-				|| novaPessoa.getCpf() == null || novaPessoa.getCpf().isEmpty() 
-				|| novaPessoa.getTipoPessoa() == null || novaPessoa.getTipoPessoa().isEmpty()) {
-			throw new PessoaException("UM DOS CAMPOS NÃO ESTÁ PREENCHIDO");
-		}
+			    || novaPessoa.getDataNascimento() == null
+			    || novaPessoa.getSexo() == null || novaPessoa.getSexo().isEmpty() 
+			    || novaPessoa.getCpf() == null || novaPessoa.getCpf().isEmpty() 
+			    || novaPessoa.getTipoPessoa() == 0) {
+			        throw new PessoaException("UM DOS CAMPOS NÃO ESTÁ PREENCHIDO");
+			}
 		
 		if (pessoaRepository.verificarCPF(novaPessoa)) {
 			throw new PessoaException("CPF JÁ CADASTRADO NO BANCO DE DADOS");

@@ -47,7 +47,7 @@ public class PessoaRepository implements BaseRepository<Pessoa>{
 		     pstmt.setDate(2, Date.valueOf(novaPessoa.getDataNascimento()));
 		     pstmt.setString(3, novaPessoa.getSexo());
 		     pstmt.setString(4, novaPessoa.getCpf());
-		     pstmt.setString(5, novaPessoa.getTipoPessoa());
+		     pstmt.setInt(5, novaPessoa.getTipoPessoa());
 		        
 		     pstmt.execute();
 		     ResultSet resultado = pstmt.getGeneratedKeys();
@@ -105,7 +105,7 @@ public class PessoaRepository implements BaseRepository<Pessoa>{
 		Statement stmt = Banco.getStatement(conn);
 		
 		ResultSet resultado = null;
-		String query = " SELECT * FROM jogador";
+		String query = " SELECT * FROM pessoa";
 		
 		try {
 			resultado = stmt.executeQuery(query);
@@ -115,7 +115,7 @@ public class PessoaRepository implements BaseRepository<Pessoa>{
 				pessoa.setDataNascimento(resultado.getDate("dataNascimento").toLocalDate());
 				pessoa.setCpf(resultado.getString("cpf"));
 				pessoa.setSexo(resultado.getString("sexo"));
-				pessoa.setTipoPessoa(resultado.getString("tipo"));
+				pessoa.setTipoPessoa(resultado.getInt("tipo"));
 				pessoas.add(pessoa);
 			}
 		} catch (SQLException erro) {
