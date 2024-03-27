@@ -26,7 +26,7 @@ public class PessoaRepository implements BaseRepository<Pessoa>{
 				retorno = true;
 			}
 		} catch (SQLException e) {
-			System.out.println("Erro VERIFICAR CADASTRO");
+			System.out.println("Erro ao VERIFICAR CADASTRO");
 			System.out.println("Erro " + e.getMessage());
 		} finally {
 			Banco.closeResultSet(resultado);
@@ -38,16 +38,17 @@ public class PessoaRepository implements BaseRepository<Pessoa>{
 	
 	@Override
 	public Pessoa salvar(Pessoa novaPessoa) {
-		String query = "INSERT INTO PESSOA (nome, dataNascimento, sexo, cpf, tipoPessoa) VALUES (?,?,?,?,?)";
+		String query = "INSERT INTO PESSOA (nome, id_pais, dataNascimento, sexo, cpf, tipoPessoa) VALUES (?,?,?,?,?,?)";
 		Connection conn = Banco.getConnection();
 		PreparedStatement pstmt = Banco.getPreparedStatementWithPk(conn, query);
 	
 		try{
 			 pstmt.setString(1, novaPessoa.getNome());
-		     pstmt.setDate(2, Date.valueOf(novaPessoa.getDataNascimento()));
-		     pstmt.setString(3, novaPessoa.getSexo());
-		     pstmt.setString(4, novaPessoa.getCpf());
-		     pstmt.setInt(5, novaPessoa.getTipoPessoa());
+			 pstmt.setInt(2, novaPessoa.getPais().getId());
+			 pstmt.setDate(3, Date.valueOf(novaPessoa.getDataNascimento()));
+		     pstmt.setString(4, novaPessoa.getSexo());
+		     pstmt.setString(5, novaPessoa.getCpf());
+		     pstmt.setInt(6, novaPessoa.getTipoPessoa());
 		        
 		     pstmt.execute();
 		     ResultSet resultado = pstmt.getGeneratedKeys();

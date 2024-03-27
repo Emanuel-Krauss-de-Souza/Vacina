@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<items>
+	<item id="NodeList/DataSourceDescriptor">
+		<column name="Nome" visible="true" order="0" width="207"/>
+		<column name="Descrição" visible="true" order="1" width="100"/>
+		<column name="Origin" visible="true" order="2" width="100"/>
+		<column name="Tipo de driver" visible="true" order="3" width="100"/>
+	</item>
+	<item id="NodeList/SQLiteTable">
+		<column name="Nome da tabela" visible="true" order="0" width="100"/>
+		<column name="Tipo de tabela" visible="true" order="1" width="100"/>
+		<column name="Descrição da tabela" visible="true" order="2" width="116"/>
+	</item>
+</items>

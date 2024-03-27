@@ -22,9 +22,7 @@ public class Vacinacao {
 		this.dataAplicacao = dataAplicacao;
 		this.avaliacao = avaliacao;
 	}
-
-
-
+	
 	public int getId() {
 		return id;
 	}

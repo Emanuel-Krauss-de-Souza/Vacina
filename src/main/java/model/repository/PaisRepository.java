@@ -13,10 +13,10 @@ import model.entity.Pais;
 public class PaisRepository {
 
 	
-	public void salvar(Pais novoPais) {
+	public Pais salvar(Pais novoPais) {
 		String query = "INSERT INTO vacina.pais\r\n"
-				+ "(id, nome, sigla)\r\n"
-				+ "VALUES(0, '', '')";
+				+ "(nome, sigla)\r\n"
+				+ "VALUES(?,?)";
 		Connection conn = Banco.getConnection();
 		PreparedStatement pstmt = Banco.getPreparedStatementWithPk(conn, query);
 		
@@ -37,24 +37,33 @@ public class PaisRepository {
 			Banco.closeStatement(pstmt);
 			Banco.closeConnection(conn);
 		}
+		return novoPais;
 	}
 	
-	public ArrayList<Pais> consultarTodos(){
-	ArrayList<Pais> paises = new ArrayList<>();
+	public Pais consultarPorId(int id){
 	Connection conn = Banco.getConnection();
 	Statement stmt = Banco.getStatement(conn);
 	
+	Pais pais = null;
 	ResultSet resultado = null;
-	String query = " SELECT * FROM pais";
+	String query = " SELECT * FROM pais WHERE id = " + id;
 	
 	try {
 		resultado = stmt.executeQuery(query);
-	while(resultado.next()) {
-		Pais pessoa = new Pais();
-		Pais.setNome(resultado.getString("nome"));
-		
+	if(resultado.next()){
+		pais = new Pais();
+		pais.setId(resultado.getInt("ID"));
+		pais.setNome(resultado.getString("NOME"));
+		pais.setSigla(resultado.getString("SIGLA"));
+	 	}
+	} catch(SQLException erro) {
+		System.out.println("Erro ao consultar todas as pessoas");
+		System.out.println("Erro: " + erro.getMessage());
+	} finally {
+		Banco.closeResultSet(resultado);
+		Banco.closeStatement(stmt);
+		Banco.closeConnection(conn);
 	}
-	}
-	return paises;
-	}
+	return pais;
+}
 }

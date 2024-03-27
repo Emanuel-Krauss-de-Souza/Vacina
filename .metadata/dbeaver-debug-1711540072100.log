@@ -1,0 +1,206 @@
+2024-03-27 08:43:39.815 - DBeaver 23.3.5.202402181738 is starting
+2024-03-27 08:43:39.816 - OS: Windows 10 10.0 (amd64)
+2024-03-27 08:43:39.816 - Java version: 17.0.6 by Eclipse Adoptium (64bit)
+2024-03-27 08:43:39.817 - Install path: 'C:\Program Files\DBeaver'
+2024-03-27 08:43:39.817 - Instance path: 'file:/C:/Users/emanuel.souza2/Documents/Vilmar/Vacina/'
+2024-03-27 08:43:39.819 - Memory available 64Mb/1024Mb
+2024-03-27 08:43:39.833 - Create display
+> Start Eclipse IDE UI [org.eclipse.ui.ide 3.22.0.v20231102-1012]
+2024-03-27 08:43:39.956 - Initialize desktop platform...
+2024-03-27 08:43:40.078 - BounceCastle bundle found. Use JCE provider BC
+> Start Core File Systems [org.eclipse.core.filesystem 1.10.200.v20231102-0934]
+> Start Core Resource Management [org.eclipse.core.resources 3.20.0.v20231102-0934]
+> Start Core de Suporte para Equipe [org.eclipse.team.core 3.10.200.v20231106-1240]
+> Start DBeaver UI Navigator [org.jkiss.dbeaver.ui.navigator 1.0.125.202402181738]
+2024-03-27 08:43:40.286 - 
+2024-03-27 08:43:40.286 - 	Refreshing workspace.
+2024-03-27 08:43:40.288 - Refreshing workspace contents
+2024-03-27 08:43:40.390 - Initialize base platform...
+2024-03-27 08:43:40.409 - Platform initialized (452ms)
+> Start DBeaver UI Editors - Base [org.jkiss.dbeaver.ui.editors.base 1.0.125.202402181738]
+2024-03-27 08:43:40.447 - Starting instance server at http://localhost:65376
+2024-03-27 08:43:40.454 - Run workbench
+> Start Eclipse e4 Workbench SWT [org.eclipse.e4.ui.workbench.swt 0.17.200.v20231030-2045]
+> Start Eclipse Application Services [org.eclipse.e4.core.services 2.4.200.v20231103-2012]
+> Start Eclipse UI Application Services [org.eclipse.e4.ui.services 1.6.200.v20231030-2045]
+> Start Eclipse e4 Progress View [org.eclipse.e4.ui.progress 0.4.200.v20231030-2045]
+> Start Eclipse Bindings Support [org.eclipse.e4.ui.bindings 0.14.200.v20231030-2045]
+> Start Eclipse e4 core commands [org.eclipse.e4.core.commands 1.1.200.v20231108-1058]
+> Start EMF XML/XMI Persistence [org.eclipse.emf.ecore.xmi 2.36.0.v20231002-1156]
+> Start Eclipse CSS SWT Theme Support [org.eclipse.e4.ui.css.swt.theme 0.14.200.v20230913-1724]
+> Start Eclipse e4 Workbench Add-ons [org.eclipse.e4.ui.workbench.addons.swt 1.5.200.v20231106-1600]
+Warning: NLS unused message: WorkbenchPreference_showMultipleEditorTabsButton in: org.eclipse.ui.internal.messages
+Warning: NLS unused message: Workbench_zoomChangedRestart in: org.eclipse.ui.internal.messages
+> Start Eclipse e4 Workbench SWT Renderer [org.eclipse.e4.ui.workbench.renderers.swt 0.16.200.v20231030-2045]
+> Start Eclipse Dependency Injection Extensions [org.eclipse.e4.core.di.extensions 0.18.100.v20231103-2012]
+> Start Eclipse CSS SWT Support [org.eclipse.e4.ui.css.swt 0.15.200.v20231025-0632]
+> Start jna [com.sun.jna 5.13.0.v20230812-1000]
+Warning: NLS unused message: BlockedJobsDialog_UserInterfaceTreeElement in: org.eclipse.ui.internal.progress.messages
+2024-03-27 08:43:41.782 - Configure workbench window
+> Start DBeaver SQL Model [org.jkiss.dbeaver.model.sql 1.0.115.202402181738]
+2024-03-27 08:43:41.960 - Total database drivers: 112 (112)
+> Start Core do Sistema de Ajuda [org.eclipse.help 3.10.200.v20231106-1240]
+2024-03-27 08:43:42.096 - Create actions
+2024-03-27 08:43:42.107 - Disable Eclipse action set 'org.eclipse.ui.edit.text.actionSet.annotationNavigation'
+2024-03-27 08:43:42.107 - Disable Eclipse action set 'org.eclipse.ui.WorkingSetActionSet'
+2024-03-27 08:43:42.107 - Disable Eclipse action set 'org.eclipse.ui.actionSet.openFiles'
+2024-03-27 08:43:43.007 - Initialize workbench window
+2024-03-27 08:43:43.009 - Finish initialization
+> Start DBeaver UI Editors - Data [org.jkiss.dbeaver.ui.editors.data 1.0.125.202402181738]
+> Start Internet Connection Management UI [org.eclipse.ui.net 1.5.200.v20231106-1240]
+> Start Internet Connection Management [org.eclipse.core.net 1.5.200.v20231106-1240]
+> Start DBeaver UI Editors - SQL [org.jkiss.dbeaver.ui.editors.sql 1.0.125.202402181738]
+> Start GEF Classic Draw2d [org.eclipse.draw2d 3.14.100.202311222042]
+> Start GEF Classic GEF (MVC) [org.eclipse.gef 3.16.0.202311222042]
+> Start DBeaver ERD UI [org.jkiss.dbeaver.erd.ui 3.0.85.202402181738]
+> Start DBeaver ERD Model [org.jkiss.dbeaver.erd.model 1.0.85.202402181738]
+> Start Editor de Texto Padrão [org.eclipse.ui.editors 3.17.100.v20231106-1600]
+> Start Workbench [org.eclipse.ui.workbench.texteditor 3.17.200.v20231106-1600]
+> Start DBeaver Sample Database [org.jkiss.dbeaver.ext.sample.database 1.0.162.202402181738]
+> Start DBeaver Tip of the day [org.jkiss.dbeaver.ext.ui.tipoftheday 1.0.131.202402181738]
+2024-03-27 08:43:46.137 - Open [https://dbeaver.io/product/version.xml]
+2024-03-27 08:43:47.101 - Downloading installation file to C:\Users\EMANUE~1.SOU\AppData\Local\Temp\dbeaver-ce-latest-x86_64-setup.exe17253379456814636116\dbeaver-ce-latest-x86_64-setup.exe
+2024-03-27 08:43:47.101 - Open [https://dbeaver.io/files/dbeaver-ce-latest-x86_64-setup.exe]
+> Start DBeaver JDBC Model [org.jkiss.dbeaver.model.jdbc 1.0.18.202402181738]
+> Start DBeaver Generic Plug-in [org.jkiss.dbeaver.ext.generic 2.3.211.202402181738]
+> Start DBeaver SQLite Model [org.jkiss.dbeaver.ext.sqlite 1.0.174.202402181738]
+> Start DBeaver UI Editors - Connections [org.jkiss.dbeaver.ui.editors.connection 1.0.116.202402181738]
+2024-03-27 08:43:55.871 - Open [https://repo1.maven.org/maven2/org/xerial/sqlite-jdbc/maven-metadata.xml]
+2024-03-27 08:43:56.642 - Open [https://repo1.maven.org/maven2/org/xerial/sqlite-jdbc/3.45.2.0/sqlite-jdbc-3.45.2.0.pom]
+2024-03-27 08:43:56.872 - Open [https://repo1.maven.org/maven2/org/slf4j/slf4j-api/1.7.36/slf4j-api-1.7.36.pom]
+2024-03-27 08:43:57.032 - Open [https://repo1.maven.org/maven2/org/slf4j/slf4j-parent/1.7.36/slf4j-parent-1.7.36.pom]
+2024-03-27 08:43:59.190 - Open [https://repo1.maven.org/maven2/org/xerial/sqlite-jdbc/3.45.2.0/sqlite-jdbc-3.45.2.0.jar]
+2024-03-27 08:44:06.058 - Event loop exception
+org.eclipse.swt.SWTException: Widget is disposed
+	at org.eclipse.swt.SWT.error(SWT.java:4918)
+	at org.eclipse.swt.SWT.error(SWT.java:4833)
+	at org.eclipse.swt.SWT.error(SWT.java:4804)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:450)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:369)
+	at org.eclipse.swt.widgets.Label.setImage(Label.java:348)
+	at org.eclipse.jface.dialogs.TitleAreaDialog.setTitleImage(TitleAreaDialog.java:692)
+	at org.eclipse.jface.wizard.WizardDialog.hardClose(WizardDialog.java:898)
+	at org.eclipse.jface.wizard.WizardDialog.finishPressed(WizardDialog.java:845)
+	at org.jkiss.dbeaver.ui.dialogs.driver.DriverDownloadDialog.finishPressed(DriverDownloadDialog.java:111)
+	at org.eclipse.jface.wizard.WizardDialog.buttonPressed(WizardDialog.java:473)
+	at org.jkiss.dbeaver.ui.dialogs.driver.DriverDownloadDialog.buttonPressed(DriverDownloadDialog.java:101)
+	at org.eclipse.jface.dialogs.Dialog.lambda$0(Dialog.java:619)
+	at org.eclipse.swt.events.SelectionListener$1.widgetSelected(SelectionListener.java:84)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:252)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4273)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4071)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3659)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:823)
+	at org.eclipse.jface.window.Window.open(Window.java:799)
+	at org.jkiss.dbeaver.ui.dialogs.driver.DriverDownloadDialog.downloadDriverFiles(DriverDownloadDialog.java:128)
+	at org.jkiss.dbeaver.ui.dialogs.driver.DriverDownloadDialog.downloadDriverFiles(DriverDownloadDialog.java:119)
+	at org.jkiss.dbeaver.core.DesktopUI$3.runTask(DesktopUI.java:197)
+	at org.jkiss.dbeaver.core.DesktopUI$3.runTask(DesktopUI.java:1)
+	at org.jkiss.dbeaver.ui.UITask.runWithResult(UITask.java:25)
+	at org.jkiss.dbeaver.model.runtime.RunnableWithResult.run(RunnableWithResult.java:34)
+	at org.eclipse.ui.internal.PendingSyncExec.run(PendingSyncExec.java:68)
+	at org.eclipse.ui.internal.UILockListener.doPendingWork(UILockListener.java:172)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:132)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4046)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3662)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:342)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:648)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:342)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:555)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.jkiss.dbeaver.ui.app.standalone.DBeaverApplication.start(DBeaverApplication.java:290)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:665)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:602)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1486)
+2024-03-27 08:44:06.072 - Connect with 'DBeaver Sample Database (SQLite)' (dbeaver-sample-database-sqlite-1)
+2024-03-27 08:44:06.136 - DBeaver is stopping
+2024-03-27 08:44:06.137 - Stop instance server
+2024-03-27 08:44:06.151 - Execution context opened (DBeaver Sample Database (SQLite); Main; 0)
+2024-03-27 08:44:06.159 - Event loop exception
+java.lang.IllegalStateException: No workbench window
+	at org.jkiss.dbeaver.ui.UIUtils.getActiveWorkbenchWindow(UIUtils.java:1840)
+	at org.jkiss.dbeaver.ui.dialogs.driver.DriverDownloadDialog.<init>(DriverDownloadDialog.java:43)
+	at org.jkiss.dbeaver.ui.dialogs.driver.DriverDownloadDialog.downloadDriverFiles(DriverDownloadDialog.java:126)
+	at org.jkiss.dbeaver.ui.dialogs.driver.DriverDownloadDialog.downloadDriverFiles(DriverDownloadDialog.java:119)
+	at org.jkiss.dbeaver.core.DesktopUI$3.runTask(DesktopUI.java:197)
+	at org.jkiss.dbeaver.core.DesktopUI$3.runTask(DesktopUI.java:1)
+	at org.jkiss.dbeaver.ui.UITask.runWithResult(UITask.java:25)
+	at org.jkiss.dbeaver.model.runtime.RunnableWithResult.run(RunnableWithResult.java:34)
+	at org.eclipse.ui.internal.PendingSyncExec.run(PendingSyncExec.java:68)
+	at org.eclipse.ui.internal.UILockListener.doPendingWork(UILockListener.java:172)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:132)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4046)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3662)
+	at org.jkiss.dbeaver.core.DesktopUI.readAndDispatchEvents(DesktopUI.java:754)
+	at org.jkiss.dbeaver.utils.RuntimeUtils.runTask(RuntimeUtils.java:288)
+	at org.jkiss.dbeaver.utils.RuntimeUtils.runTask(RuntimeUtils.java:248)
+	at org.jkiss.dbeaver.ui.app.standalone.DBeaverApplication.shutdown(DBeaverApplication.java:686)
+	at org.jkiss.dbeaver.ui.app.standalone.DBeaverApplication.start(DBeaverApplication.java:318)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:665)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:602)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1486)
+2024-03-27 08:44:06.162 - Cannot invoke "java.lang.Boolean.booleanValue()" because the return value of "org.jkiss.dbeaver.core.DesktopUI$3.execute()" is null
+java.lang.NullPointerException: Cannot invoke "java.lang.Boolean.booleanValue()" because the return value of "org.jkiss.dbeaver.core.DesktopUI$3.execute()" is null
+	at org.jkiss.dbeaver.core.DesktopUI.downloadDriverFiles(DesktopUI.java:199)
+	at org.jkiss.dbeaver.registry.driver.DriverDescriptor.validateFilesPresence(DriverDescriptor.java:1430)
+	at org.jkiss.dbeaver.registry.driver.DriverDescriptor.loadLibraries(DriverDescriptor.java:1295)
+	at org.jkiss.dbeaver.registry.driver.DriverDescriptor.loadDriver(DriverDescriptor.java:1259)
+	at org.jkiss.dbeaver.registry.driver.DriverDescriptor.loadDriver(DriverDescriptor.java:1205)
+	at org.jkiss.dbeaver.registry.driver.DriverDescriptor.getDriverInstance(DriverDescriptor.java:745)
+	at org.jkiss.dbeaver.model.impl.jdbc.JDBCDataSource.getDriverInstance(JDBCDataSource.java:717)
+	at org.jkiss.dbeaver.model.impl.jdbc.JDBCDataSource.createDriverInstance(JDBCDataSource.java:282)
+	at org.jkiss.dbeaver.model.impl.jdbc.JDBCDataSource.openConnection(JDBCDataSource.java:198)
+	at org.jkiss.dbeaver.ext.generic.model.GenericDataSource.openConnection(GenericDataSource.java:159)
+	at org.jkiss.dbeaver.model.impl.jdbc.JDBCExecutionContext.connect(JDBCExecutionContext.java:106)
+	at org.jkiss.dbeaver.model.impl.jdbc.JDBCRemoteInstance.initializeMainContext(JDBCRemoteInstance.java:102)
+	at org.jkiss.dbeaver.model.impl.jdbc.JDBCRemoteInstance.<init>(JDBCRemoteInstance.java:61)
+	at org.jkiss.dbeaver.model.impl.jdbc.JDBCDataSource.initializeRemoteInstance(JDBCDataSource.java:119)
+	at org.jkiss.dbeaver.ext.generic.model.GenericDataSource.<init>(GenericDataSource.java:124)
+	at org.jkiss.dbeaver.ext.sqlite.model.SQLiteDataSource.<init>(SQLiteDataSource.java:50)
+	at org.jkiss.dbeaver.ext.sqlite.model.SQLiteMetaModel.createDataSourceImpl(SQLiteMetaModel.java:153)
+	at org.jkiss.dbeaver.ext.generic.GenericDataSourceProvider.openDataSource(GenericDataSourceProvider.java:106)
+	at org.jkiss.dbeaver.registry.DataSourceDescriptor.openDataSource(DataSourceDescriptor.java:1385)
+	at org.jkiss.dbeaver.registry.DataSourceDescriptor.connect0(DataSourceDescriptor.java:1229)
+	at org.jkiss.dbeaver.registry.DataSourceDescriptor.connect(DataSourceDescriptor.java:1015)
+	at org.jkiss.dbeaver.runtime.jobs.ConnectJob.run(ConnectJob.java:77)
+	at org.jkiss.dbeaver.runtime.jobs.ConnectJob.runSync(ConnectJob.java:104)
+	at org.jkiss.dbeaver.ui.actions.datasource.DataSourceHandler.connectToDataSource(DataSourceHandler.java:117)
+	at org.jkiss.dbeaver.ui.actions.datasource.UIServiceConnectionsImpl.initConnection(UIServiceConnectionsImpl.java:87)
+	at org.jkiss.dbeaver.model.DBUtils.initDataSource(DBUtils.java:2488)
+	at org.jkiss.dbeaver.model.navigator.DBNDataSource.initializeNode(DBNDataSource.java:157)
+	at org.jkiss.dbeaver.model.navigator.DBNDatabaseNode.getChildren(DBNDatabaseNode.java:227)
+	at org.jkiss.dbeaver.model.navigator.DBNDatabaseNode.getChildren(DBNDatabaseNode.java:1)
+	at org.jkiss.dbeaver.model.navigator.DBNUtils.getNodeChildrenFiltered(DBNUtils.java:91)
+	at org.jkiss.dbeaver.ui.navigator.database.load.TreeLoadService.evaluate(TreeLoadService.java:49)
+	at org.jkiss.dbeaver.ui.navigator.database.load.TreeLoadService.evaluate(TreeLoadService.java:1)
+	at org.jkiss.dbeaver.ui.LoadingJob.run(LoadingJob.java:89)
+	at org.jkiss.dbeaver.ui.LoadingJob.run(LoadingJob.java:73)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:114)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+2024-03-27 08:44:07.142 - Instance server has been stopped
+2024-03-27 08:44:08.051 - DBeaver shutdown completed

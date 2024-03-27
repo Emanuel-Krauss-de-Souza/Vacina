@@ -25,7 +25,7 @@ public class VacinaService {
 		return repository.consultarPorId(id);
 	}
 
-	public List<Vacina> consultarTodas() {
+	public List<Vacina> consultarTodos() {
 		return repository.consultarTodos();
 	}
 }

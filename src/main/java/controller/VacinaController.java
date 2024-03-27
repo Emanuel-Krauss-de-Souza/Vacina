@@ -20,6 +20,7 @@ public class VacinaController {
 	private VacinaService service = new VacinaService();
 	
 	@POST
+	@Path("/salvar")
 	@Consumes(MediaType.APPLICATION_JSON)
 	@Produces(MediaType.APPLICATION_JSON)
 	public Vacina salvar(Vacina novaVacina){
@@ -48,6 +49,6 @@ public class VacinaController {
 	@GET
 	@Path("/todas")
 	public List<Vacina> consultarTodas(){
-		 return service.consultarTodas();
+		 return service.consultarTodos();
 	}
 }
