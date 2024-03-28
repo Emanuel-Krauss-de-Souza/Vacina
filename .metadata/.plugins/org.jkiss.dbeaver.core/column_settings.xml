@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <items>
+	<item id="NodeList/DBNProjectDatabases/DBNBookmarkFolder/DBNDiagramFolder/DBNResource">
+		<column name="Nome" visible="true" order="0" width="100"/>
+		<column name="Caminho" visible="true" order="1" width="118"/>
+		<column name="Tamanho" visible="true" order="2" width="100"/>
+		<column name="Última modificação" visible="true" order="3" width="118"/>
+	</item>
 	<item id="NodeList/DataSourceDescriptor">
 		<column name="Nome" visible="true" order="0" width="207"/>
 		<column name="Descrição" visible="true" order="1" width="100"/>

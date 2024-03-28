@@ -1,21 +1,21 @@
-2024-03-27 09:03:56.318 - DBeaver 23.3.5.202402181738 is starting
-2024-03-27 09:03:56.319 - OS: Windows 10 10.0 (amd64)
-2024-03-27 09:03:56.319 - Java version: 17.0.6 by Eclipse Adoptium (64bit)
-2024-03-27 09:03:56.319 - Install path: 'C:\Program Files\DBeaver'
-2024-03-27 09:03:56.320 - Instance path: 'file:/C:/Users/emanuel.souza2/Documents/Vilmar/Vacina/'
-2024-03-27 09:03:56.322 - Memory available 64Mb/1024Mb
-2024-03-27 09:03:56.331 - Create display
-2024-03-27 09:03:56.419 - Initialize desktop platform...
-2024-03-27 09:03:56.540 - BounceCastle bundle found. Use JCE provider BC
+2024-03-28 08:55:52.726 - DBeaver 23.3.5.202402181738 is starting
+2024-03-28 08:55:52.727 - OS: Windows 10 10.0 (amd64)
+2024-03-28 08:55:52.727 - Java version: 17.0.6 by Eclipse Adoptium (64bit)
+2024-03-28 08:55:52.727 - Install path: 'C:\Program Files\DBeaver'
+2024-03-28 08:55:52.728 - Instance path: 'file:/C:/Users/emanuel.souza2/Documents/Vilmar/Vacina/'
+2024-03-28 08:55:52.730 - Memory available 64Mb/1024Mb
+2024-03-28 08:55:52.737 - Create display
+2024-03-28 08:55:52.826 - Initialize desktop platform...
+2024-03-28 08:55:52.958 - BounceCastle bundle found. Use JCE provider BC
 > Start Core File Systems [org.eclipse.core.filesystem 1.10.200.v20231102-0934]
 > Start Core Resource Management [org.eclipse.core.resources 3.20.0.v20231102-0934]
 > Start Core de Suporte para Equipe [org.eclipse.team.core 3.10.200.v20231106-1240]
 > Start DBeaver UI Navigator [org.jkiss.dbeaver.ui.navigator 1.0.125.202402181738]
-2024-03-27 09:03:56.733 - Initialize base platform...
-2024-03-27 09:03:56.753 - Platform initialized (334ms)
+2024-03-28 08:55:53.163 - Initialize base platform...
+2024-03-28 08:55:53.186 - Platform initialized (360ms)
 > Start DBeaver UI Editors - Base [org.jkiss.dbeaver.ui.editors.base 1.0.125.202402181738]
-2024-03-27 09:03:56.793 - Starting instance server at http://localhost:49230
-2024-03-27 09:03:56.799 - Run workbench
+2024-03-28 08:55:53.248 - Starting instance server at http://localhost:55405
+2024-03-28 08:55:53.255 - Run workbench
 > Start Eclipse e4 Workbench SWT [org.eclipse.e4.ui.workbench.swt 0.17.200.v20231030-2045]
 > Start Eclipse Application Services [org.eclipse.e4.core.services 2.4.200.v20231103-2012]
 > Start Eclipse UI Application Services [org.eclipse.e4.ui.services 1.6.200.v20231030-2045]
@@ -32,124 +32,86 @@ Warning: NLS unused message: Workbench_zoomChangedRestart in: org.eclipse.ui.int
 > Start Eclipse CSS SWT Support [org.eclipse.e4.ui.css.swt 0.15.200.v20231025-0632]
 > Start jna [com.sun.jna 5.13.0.v20230812-1000]
 Warning: NLS unused message: BlockedJobsDialog_UserInterfaceTreeElement in: org.eclipse.ui.internal.progress.messages
-2024-03-27 09:03:58.365 - Configure workbench window
+2024-03-28 08:55:54.852 - Configure workbench window
 > Start DBeaver SQL Model [org.jkiss.dbeaver.model.sql 1.0.115.202402181738]
-2024-03-27 09:03:58.526 - Total database drivers: 112 (112)
+2024-03-28 08:55:55.020 - Total database drivers: 112 (112)
 > Start Core do Sistema de Ajuda [org.eclipse.help 3.10.200.v20231106-1240]
-2024-03-27 09:03:58.625 - Create actions
-2024-03-27 09:03:58.631 - Disable Eclipse action set 'org.eclipse.ui.edit.text.actionSet.annotationNavigation'
-2024-03-27 09:03:58.631 - Disable Eclipse action set 'org.eclipse.ui.WorkingSetActionSet'
-2024-03-27 09:03:58.631 - Disable Eclipse action set 'org.eclipse.ui.actionSet.openFiles'
-2024-03-27 09:03:59.047 - Initialize workbench window
-2024-03-27 09:03:59.055 - Finish initialization
+2024-03-28 08:55:55.101 - Create actions
+2024-03-28 08:55:55.107 - Disable Eclipse action set 'org.eclipse.ui.edit.text.actionSet.annotationNavigation'
+2024-03-28 08:55:55.108 - Disable Eclipse action set 'org.eclipse.ui.WorkingSetActionSet'
+2024-03-28 08:55:55.108 - Disable Eclipse action set 'org.eclipse.ui.actionSet.openFiles'
+2024-03-28 08:55:55.516 - Initialize workbench window
+2024-03-28 08:55:55.523 - Finish initialization
+> Start DBeaver UI Editors - Data [org.jkiss.dbeaver.ui.editors.data 1.0.125.202402181738]
+> Start Internet Connection Management UI [org.eclipse.ui.net 1.5.200.v20231106-1240]
+> Start Internet Connection Management [org.eclipse.core.net 1.5.200.v20231106-1240]
 > Start DBeaver UI Editors - SQL [org.jkiss.dbeaver.ui.editors.sql 1.0.125.202402181738]
+> Start DBeaver Sample Database [org.jkiss.dbeaver.ext.sample.database 1.0.162.202402181738]
+> Start DBeaver Tip of the day [org.jkiss.dbeaver.ext.ui.tipoftheday 1.0.131.202402181738]
+2024-03-28 08:56:15.384 - Resource '/Teste' already exists.
+java.lang.Exception: Resource '/Teste' already exists.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	at org.eclipse.core.internal.resources.Resource.checkDoesNotExist(Resource.java:346)
+	at org.eclipse.core.internal.resources.Resource.checkDoesNotExist(Resource.java:333)
+	at org.eclipse.core.internal.resources.Resource.checkMoveRequirements(Resource.java:422)
+	at org.eclipse.core.internal.resources.Resource.assertMoveRequirements(Resource.java:232)
+	at org.eclipse.core.internal.resources.Project.move(Project.java:1012)
+	at org.eclipse.core.internal.resources.Project.move(Project.java:994)
+	at org.jkiss.dbeaver.model.navigator.DBNProject.rename(DBNProject.java:163)
+	at org.jkiss.dbeaver.ui.navigator.actions.NavigatorHandlerObjectRename.renameNode(NavigatorHandlerObjectRename.java:88)
+	at org.jkiss.dbeaver.ui.navigator.actions.NavigatorHandlerObjectRename.execute(NavigatorHandlerObjectRename.java:63)
+	at org.eclipse.ui.internal.handlers.HandlerProxy.execute(HandlerProxy.java:283)
+	at org.eclipse.ui.internal.handlers.E4HandlerProxy.execute(E4HandlerProxy.java:99)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invokeUsingClass(InjectorImpl.java:298)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invoke(InjectorImpl.java:232)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.invoke(ContextInjectionFactory.java:174)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceHandler.execute(HandlerServiceHandler.java:165)
+	at org.eclipse.core.commands.Command.executeWithChecks(Command.java:488)
+	at org.eclipse.core.commands.ParameterizedCommand.executeWithChecks(ParameterizedCommand.java:485)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceImpl.executeHandler(HandlerServiceImpl.java:213)
+	at org.eclipse.e4.ui.workbench.renderers.swt.HandledContributionItem.executeItem(HandledContributionItem.java:438)
+	at org.eclipse.e4.ui.workbench.renderers.swt.AbstractContributionItem.handleWidgetSelection(AbstractContributionItem.java:449)
+	at org.eclipse.e4.ui.workbench.renderers.swt.AbstractContributionItem.lambda$2(AbstractContributionItem.java:475)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4273)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4071)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3659)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:342)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:648)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:342)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:555)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.jkiss.dbeaver.ui.app.standalone.DBeaverApplication.start(DBeaverApplication.java:290)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:665)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:602)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1486)
 > Start GEF Classic Draw2d [org.eclipse.draw2d 3.14.100.202311222042]
 > Start GEF Classic GEF (MVC) [org.eclipse.gef 3.16.0.202311222042]
 > Start DBeaver ERD UI [org.jkiss.dbeaver.erd.ui 3.0.85.202402181738]
 > Start DBeaver ERD Model [org.jkiss.dbeaver.erd.model 1.0.85.202402181738]
-> Start Editor de Texto Padrão [org.eclipse.ui.editors 3.17.100.v20231106-1600]
-> Start Workbench [org.eclipse.ui.workbench.texteditor 3.17.200.v20231106-1600]
-> Start DBeaver UI Editors - Data [org.jkiss.dbeaver.ui.editors.data 1.0.125.202402181738]
-> Start Internet Connection Management UI [org.eclipse.ui.net 1.5.200.v20231106-1240]
-> Start Internet Connection Management [org.eclipse.core.net 1.5.200.v20231106-1240]
-> Start DBeaver Sample Database [org.jkiss.dbeaver.ext.sample.database 1.0.162.202402181738]
-> Start DBeaver Tip of the day [org.jkiss.dbeaver.ext.ui.tipoftheday 1.0.131.202402181738]
-> Start DBeaver JDBC Model [org.jkiss.dbeaver.model.jdbc 1.0.18.202402181738]
-> Start DBeaver Generic Plug-in [org.jkiss.dbeaver.ext.generic 2.3.211.202402181738]
-> Start DBeaver SQLite Model [org.jkiss.dbeaver.ext.sqlite 1.0.174.202402181738]
 > Start DBeaver UI Editors - Connections [org.jkiss.dbeaver.ui.editors.connection 1.0.116.202402181738]
-> Start Data Transfer UI [org.jkiss.dbeaver.data.transfer.ui 1.0.109.202402181738]
-> Start DBeaver Generic UI Plug-in [org.jkiss.dbeaver.ext.generic.ui 1.0.101.202402181738]
-2024-03-27 09:04:15.563 - Service 'org.jkiss.dbeaver.runtime.ui.UIServiceSecurity' not found
-> Start DBeaver SQL Language Semantic Model [org.jkiss.dbeaver.model.lsm 1.0.20.202402181738]
-> Start DBeaver Data Transfer [org.jkiss.dbeaver.data.transfer 2.0.109.202402181738]
-2024-03-27 09:05:12.366 - Service 'org.jkiss.dbeaver.runtime.ui.UIServiceSecurity' not found
-2024-03-27 09:08:36.070 - Connect with 'jdbc:sqlite:C:\Users\emanuel.souza2\Documents\Vilmar\Vacina' (sqlite_jdbc-18e7fcfe9c9-a00044783b920e0)
-2024-03-27 09:08:36.097 - Execution context opened (jdbc:sqlite:C:\Users\emanuel.souza2\Documents\Vilmar\Vacina; Main; 0)
-2024-03-27 09:08:36.252 - [SQLITE_CANTOPEN_ISDIR] The file is really a directory (unable to open database file)
-org.sqlite.SQLiteException: [SQLITE_CANTOPEN_ISDIR] The file is really a directory (unable to open database file)
-	at org.sqlite.core.DB.newSQLException(DB.java:1179)
-	at org.sqlite.core.DB.newSQLException(DB.java:1190)
-	at org.sqlite.core.DB.throwex(DB.java:1150)
-	at org.sqlite.core.NativeDB._open_utf8(Native Method)
-	at org.sqlite.core.NativeDB._open(NativeDB.java:81)
-	at org.sqlite.core.DB.open(DB.java:216)
-	at org.sqlite.SQLiteConnection.open(SQLiteConnection.java:287)
-	at org.sqlite.SQLiteConnection.<init>(SQLiteConnection.java:67)
-	at org.sqlite.jdbc3.JDBC3Connection.<init>(JDBC3Connection.java:28)
-	at org.sqlite.jdbc4.JDBC4Connection.<init>(JDBC4Connection.java:19)
-	at org.sqlite.JDBC.createConnection(JDBC.java:106)
-	at org.sqlite.JDBC.connect(JDBC.java:79)
-	at org.jkiss.dbeaver.model.impl.jdbc.JDBCConnectionOpener.run(JDBCConnectionOpener.java:109)
-	at org.jkiss.dbeaver.model.impl.jdbc.JDBCConnectionOpener.run(JDBCConnectionOpener.java:83)
-	at org.jkiss.dbeaver.model.impl.jdbc.JDBCDataSource.openConnection(JDBCDataSource.java:221)
-	at org.jkiss.dbeaver.ext.generic.model.GenericDataSource.openConnection(GenericDataSource.java:159)
-	at org.jkiss.dbeaver.model.impl.jdbc.JDBCExecutionContext.connect(JDBCExecutionContext.java:106)
-	at org.jkiss.dbeaver.model.impl.jdbc.JDBCRemoteInstance.initializeMainContext(JDBCRemoteInstance.java:102)
-	at org.jkiss.dbeaver.model.impl.jdbc.JDBCRemoteInstance.<init>(JDBCRemoteInstance.java:61)
-	at org.jkiss.dbeaver.model.impl.jdbc.JDBCDataSource.initializeRemoteInstance(JDBCDataSource.java:119)
-	at org.jkiss.dbeaver.ext.generic.model.GenericDataSource.<init>(GenericDataSource.java:124)
-	at org.jkiss.dbeaver.ext.sqlite.model.SQLiteDataSource.<init>(SQLiteDataSource.java:50)
-	at org.jkiss.dbeaver.ext.sqlite.model.SQLiteMetaModel.createDataSourceImpl(SQLiteMetaModel.java:153)
-	at org.jkiss.dbeaver.ext.generic.GenericDataSourceProvider.openDataSource(GenericDataSourceProvider.java:106)
-	at org.jkiss.dbeaver.registry.DataSourceDescriptor.openDataSource(DataSourceDescriptor.java:1385)
-	at org.jkiss.dbeaver.registry.DataSourceDescriptor.connect0(DataSourceDescriptor.java:1229)
-	at org.jkiss.dbeaver.registry.DataSourceDescriptor.connect(DataSourceDescriptor.java:1015)
-	at org.jkiss.dbeaver.runtime.jobs.ConnectJob.run(ConnectJob.java:77)
-	at org.jkiss.dbeaver.runtime.jobs.ConnectionTestJob.run(ConnectionTestJob.java:103)
-	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:114)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
-> Start DBeaver SQL Terminal [org.jkiss.dbeaver.ui.editors.sql.terminal 1.0.101.202402181738]
-> Start Núcleo de Suporte a Comparação [org.eclipse.compare.core 3.8.300.v20231106-1240]
-> Start Console [org.eclipse.ui.console 3.13.100.v20230914-0751]
-Warning: NLS unused message: InputStreamMonitor_label in: org.eclipse.debug.internal.core.DebugCoreMessages
-Warning: NLS unused message: OutputStreamMonitor_label in: org.eclipse.debug.internal.core.DebugCoreMessages
-> Start Depurar Core [org.eclipse.debug.core 3.21.200.v20231021-1513]
-2024-03-27 09:08:46.914 - Connect with 'DBeaver Sample Database (SQLite)' (dbeaver-sample-database-sqlite-1)
-2024-03-27 09:08:46.915 - Execution context opened (DBeaver Sample Database (SQLite); Main; 1)
-2024-03-27 09:08:46.931 - Execution context opened (DBeaver Sample Database (SQLite); Metadata; 2)
-2024-03-27 09:08:46.954 - Connected (dbeaver-sample-database-sqlite-1, SQLite JDBC [3.45.2.0])
-2024-03-27 09:08:46.991 - Execution context opened (DBeaver Sample Database (SQLite); SQLEditor <Script.sql>; 3)
-2024-03-27 09:08:55.074 - org.jkiss.dbeaver.model.sql.DBSQLException: Erro SQL [1]: [SQLITE_ERROR] SQL error or missing database (near "DATABASE": syntax error)
-	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.executeStatement(JDBCStatementImpl.java:133)
-	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeStatement(SQLQueryJob.java:601)
-	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.lambda$2(SQLQueryJob.java:504)
-	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:190)
-	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeSingleQuery(SQLQueryJob.java:511)
-	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.run(SQLQueryJob.java:239)
-	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:114)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
-Caused by: org.sqlite.SQLiteException: [SQLITE_ERROR] SQL error or missing database (near "DATABASE": syntax error)
-	at org.sqlite.core.DB.newSQLException(DB.java:1179)
-	at org.sqlite.core.DB.newSQLException(DB.java:1190)
-	at org.sqlite.core.DB.throwex(DB.java:1150)
-	at org.sqlite.core.NativeDB.prepare_utf8(Native Method)
-	at org.sqlite.core.NativeDB.prepare(NativeDB.java:132)
-	at org.sqlite.core.DB.prepare(DB.java:264)
-	at org.sqlite.jdbc3.JDBC3Statement.lambda$execute$0(JDBC3Statement.java:54)
-	at org.sqlite.jdbc3.JDBC3Statement.withConnectionTimeout(JDBC3Statement.java:454)
-	at org.sqlite.jdbc3.JDBC3Statement.execute(JDBC3Statement.java:43)
-	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.execute(JDBCStatementImpl.java:330)
-	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.executeStatement(JDBCStatementImpl.java:131)
-	... 7 more
-2024-03-27 09:09:11.061 - Delete empty SQL script '\General\Scripts\Script.sql'
-2024-03-27 09:09:11.066 - Execution context closed (DBeaver Sample Database (SQLite), 3)
-2024-03-27 09:09:31.977 - Execution context closed (DBeaver Sample Database (SQLite), 1)
-2024-03-27 09:09:31.988 - Execution context closed (DBeaver Sample Database (SQLite), 2)
-2024-03-27 09:09:31.988 - Disconnected (dbeaver-sample-database-sqlite-1)
-2024-03-27 09:09:33.737 - Connect with 'DBeaver Sample Database (SQLite)' (dbeaver-sample-database-sqlite-1)
-2024-03-27 09:09:33.738 - Execution context opened (DBeaver Sample Database (SQLite); Main; 4)
-2024-03-27 09:09:33.739 - Execution context opened (DBeaver Sample Database (SQLite); Metadata; 5)
-2024-03-27 09:09:33.741 - Connected (dbeaver-sample-database-sqlite-1, SQLite JDBC [3.45.2.0])
-2024-03-27 09:09:37.061 - Invalidate datasource 'DBeaver Sample Database (SQLite)' (dbeaver-sample-database-sqlite-1)
-2024-03-27 09:09:37.061 - 	Invalidate context 'Main' for dbeaver-sample-database-sqlite-1
-2024-03-27 09:09:37.074 - Execution context closed (DBeaver Sample Database (SQLite), 4)
-2024-03-27 09:09:37.075 - 	Invalidate context 'Metadata' for dbeaver-sample-database-sqlite-1
-2024-03-27 09:09:37.087 - Execution context closed (DBeaver Sample Database (SQLite), 5)
-2024-03-27 09:09:37.091 - Connections reopened: 2 (of 2)
-> Start DBeaver Tasks View [org.jkiss.dbeaver.tasks.ui.view 1.0.74.202402181738]
-> Start DBeaver Tasks - General UI [org.jkiss.dbeaver.tasks.ui 1.0.103.202402181738]
-2024-03-27 09:10:05.913 - DBeaver is stopping
-2024-03-27 09:10:05.913 - Stop instance server
-2024-03-27 09:10:06.921 - Instance server has been stopped
-2024-03-27 09:10:06.922 - DBeaver shutdown completed
+> Start DBeaver SSH tunnels UI [org.jkiss.dbeaver.net.ssh.ui 1.0.146.202402181738]
+> Start DBeaver SSH Tunnels [org.jkiss.dbeaver.net.ssh 1.0.146.202402181738]
+2024-03-28 08:56:30.704 - DBeaver is stopping
+2024-03-28 08:56:30.705 - Stop instance server
+2024-03-28 08:56:31.711 - Instance server has been stopped
+2024-03-28 08:56:31.712 - DBeaver shutdown completed

@@ -16,7 +16,7 @@ public class VacinaRepository implements BaseRepository<Vacina> {
 
 	@Override
 	public Vacina salvar(Vacina novaVacina) {
-		String sql = " INSERT INTO vacina(id_pesquisador, nome, pais_origem, data_inicio_pesquisa, estagio_pesquisa) "
+		String sql = " INSERT INTO vacina(id_pessoa, nome, id_pais_origem, dataInicioPesquisa, estagio) "
 				   + " VALUES(?, ?, ?, ?, ?) ";
 		
 		Connection conn = Banco.getConnection();
@@ -25,9 +25,9 @@ public class VacinaRepository implements BaseRepository<Vacina> {
 		try {
 			pstmt.setInt(1, novaVacina.getPesquisadorResponsavel().getId());
 			pstmt.setString(2, novaVacina.getNome());
-			pstmt.setObject(3, novaVacina.getPaisOrigem());
-			pstmt.setInt(4, novaVacina.getEstagio());
-			pstmt.setDate(5, Date.valueOf(novaVacina.getDataInicioPesquisa()));
+			pstmt.setInt(3, novaVacina.getPaisOrigem().getId());
+			pstmt.setDate(4, Date.valueOf(novaVacina.getDataInicioPesquisa()));
+			pstmt.setInt(5, novaVacina.getEstagio());
 			
 			pstmt.execute();
 			ResultSet resultado = pstmt.getGeneratedKeys();
@@ -51,7 +51,9 @@ public class VacinaRepository implements BaseRepository<Vacina> {
 		Connection conn = Banco.getConnection();
 		Statement stmt = Banco.getStatement(conn);
 		boolean excluiu = false;
+		
 		String query = "DELETE * FROM vacina WHERE id = " + id;
+		
 		try {
 			if(stmt.executeUpdate(query) == 1) {
 				excluiu = true;
@@ -77,7 +79,7 @@ public class VacinaRepository implements BaseRepository<Vacina> {
 		try {
 			pstmt.setInt(1, vacinaEditada.getPesquisadorResponsavel().getId());
 			pstmt.setString(2, vacinaEditada.getNome());
-			pstmt.setObject(3, vacinaEditada.getPaisOrigem());
+			pstmt.setInt(3, vacinaEditada.getPaisOrigem().getId());
 			pstmt.setInt(4, vacinaEditada.getEstagio());
 			pstmt.setDate(5, Date.valueOf(vacinaEditada.getDataInicioPesquisa()));
 			

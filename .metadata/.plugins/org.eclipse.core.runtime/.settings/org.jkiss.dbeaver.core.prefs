@@ -1,5 +1,8 @@
 driver.selector.orderBy=score
 eclipse.preferences.version=1
+org.jkiss.dbeaver.core.confirm.exit=always
+project.active=Vacina
+sample.database.canceled=true
 tipOfTheDayInitializer.notFirstRun=true
-ui.auto.update.check.time=1711539826136
-ui.show.tip.of.the.day.on.startup=true
+ui.auto.update.check.time=1711622336967
+ui.show.tip.of.the.day.on.startup=false

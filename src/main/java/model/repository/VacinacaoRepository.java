@@ -8,6 +8,7 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
 
+import model.entity.Pessoa;
 import model.entity.Vacinacao;
 
 public class VacinacaoRepository {
@@ -22,7 +23,7 @@ public class VacinacaoRepository {
 		
 		try {
 			
-			pstmt.setInt(1, novaVacinacao.getId());
+			pstmt.setInt(1, novaVacinacao.getPessoaAplicada().getId());
 			pstmt.setInt(2, novaVacinacao.getVacina().getId());
 			pstmt.setDate(3, Date.valueOf(novaVacinacao.getDataAplicacao()));
 			pstmt.setInt(4, novaVacinacao.getAvaliacao());
@@ -80,7 +81,7 @@ public class VacinacaoRepository {
 		
 		try {
 			
-			pstmt.setInt(1, vacinacaoEditada.getIdPessoa());
+			pstmt.setInt(1, vacinacaoEditada.getPessoaAplicada().getId());
 			pstmt.setInt(2, vacinacaoEditada.getVacina().getId());
 			pstmt.setDate(3, Date.valueOf(vacinacaoEditada.getDataAplicacao()));
 			pstmt.setInt(4, vacinacaoEditada.getAvaliacao());
@@ -113,11 +114,13 @@ public class VacinacaoRepository {
 		try {
 			
 			resultado = pstmt.executeQuery(query);
+			PessoaRepository pessoaRepository = new PessoaRepository();
 			
 			if(resultado.next()) {
 			vacinacao = new Vacinacao();
 			vacinacao.setId(Integer.parseInt(resultado.getString("id")));
-			vacinacao.setIdPessoa(Integer.parseInt(resultado.getString("id")));
+			Pessoa pessoaAplicada = pessoaRepository.consultarPorId(resultado.getInt("id_pessoa_aplicada"));
+			vacinacao.setPessoaAplicada(pessoaAplicada);
 			vacinacao.setDataAplicacao(resultado.getDate("data_aplicacao").toLocalDate());
 			vacinacao.setAvaliacao(resultado.getInt("avaliacao"));
 			}
@@ -145,13 +148,15 @@ public class VacinacaoRepository {
 		try {
 			
 			resultado = pstmt.executeQuery(query);
+			PessoaRepository pessoaRepository = new PessoaRepository();
 			
 			while (resultado.next()) {
 				
 			Vacinacao vacinacao = new Vacinacao();
 			
 			vacinacao.setId(Integer.parseInt(resultado.getString("id")));
-			vacinacao.setIdPessoa(Integer.parseInt(resultado.getString("id")));
+			Pessoa pessoaAplicada = pessoaRepository.consultarPorId(resultado.getInt("id_pessoa_aplicada"));
+			vacinacao.setPessoaAplicada(pessoaAplicada);
 			vacinacao.setDataAplicacao(resultado.getDate("data_aplicacao").toLocalDate());
 			vacinacao.setAvaliacao(resultado.getInt("avaliacao"));
 			}

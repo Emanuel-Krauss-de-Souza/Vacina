@@ -38,7 +38,8 @@ public class PessoaRepository implements BaseRepository<Pessoa>{
 	
 	@Override
 	public Pessoa salvar(Pessoa novaPessoa) {
-		String query = "INSERT INTO PESSOA (nome, id_pais, dataNascimento, sexo, cpf, tipoPessoa) VALUES (?,?,?,?,?,?)";
+		String query = "INSERT INTO PESSOA (nome, id_pais, dataNascimento, sexo, cpf, tipoPessoa)"
+				+ " VALUES (?,?,?,?,?,?)";
 		Connection conn = Banco.getConnection();
 		PreparedStatement pstmt = Banco.getPreparedStatementWithPk(conn, query);
 	
@@ -69,18 +70,16 @@ public class PessoaRepository implements BaseRepository<Pessoa>{
 
 	@Override
 	public boolean excluir(int id) {
-		
 		Connection conn = Banco.getConnection();
 		Statement stmt = Banco.getStatement(conn);
 		boolean excluiu = false;
 		String query = "DELETE FROM pessoa WHERE id = " + id;
-		
 		try {
 			if(stmt.executeUpdate(query) == 1) {
 				excluiu = true;
 			}
 		} catch (SQLException erro) {
-			System.out.println("Erri ao excluir pessoa!");
+			System.out.println("Erro ao excluir pessoa");
 			System.out.println("Erro: " + erro.getMessage());
 		} finally {
 			Banco.closeStatement(stmt);
@@ -90,14 +89,63 @@ public class PessoaRepository implements BaseRepository<Pessoa>{
 	}
 
 	@Override
-	public boolean alterar(Pessoa novaPessoa) {
-		return false;
+	public boolean alterar(Pessoa pessoaEditada) {
+		boolean alterou = false;
+		String query = " UPDATE exemplos.pessoa "
+				     + " SET nome=?, cpf=?, sexo=?, id_pais=? "
+				     + " data_nascimento=?, tipo=? "
+				     + " WHERE id=? ";
+		Connection conn = Banco.getConnection();
+		PreparedStatement stmt = Banco.getPreparedStatementWithPk(conn, query);
+		try {
+			stmt.setString(1, pessoaEditada.getNome());
+			stmt.setString(2, pessoaEditada.getCpf());
+			stmt.setString(3, pessoaEditada.getSexo() + "");
+			stmt.setInt(4, pessoaEditada.getPais().getId());
+			stmt.setDate(5, Date.valueOf(pessoaEditada.getDataNascimento()));
+			stmt.setInt(6, pessoaEditada.getTipoPessoa());
+			
+			stmt.setInt(7, pessoaEditada.getId());
+			alterou = stmt.executeUpdate() > 0;
+		} catch (SQLException erro) {
+			System.out.println("Erro ao atualizar pessoa");
+			System.out.println("Erro: " + erro.getMessage());
+		} finally {
+			Banco.closeStatement(stmt);
+			Banco.closeConnection(conn);
+		}
+		return alterou;
 	}
 
 	@Override
 	public Pessoa consultarPorId(int id) {
-		return null;
-}
+		Connection conn = Banco.getConnection();
+		Statement pstmt = Banco.getStatement(conn);
+		
+		Pessoa pessoa = null;
+		ResultSet resultado = null;
+		String query = " SELECT * FROM vacina WHERE id = " + id;
+		
+		try {
+			resultado = pstmt.executeQuery(query);
+			while(resultado.next()) {
+				pessoa.setNome(resultado.getString("nome"));
+				pessoa.setDataNascimento(resultado.getDate("dataNascimento").toLocalDate());
+				pessoa.setCpf(resultado.getString("cpf"));
+				pessoa.setSexo(resultado.getString("sexo"));
+				pessoa.setTipoPessoa(resultado.getInt("tipo"));
+			}
+		} catch (SQLException erro) {
+			System.out.println("Erro ao executar consultar todas as pessoas");
+			System.out.println("Erro: " + erro.getMessage());
+		} finally {
+			Banco.closeResultSet(resultado);
+			Banco.closeStatement(pstmt);
+			Banco.closeConnection(conn);
+		}
+		return pessoa;
+	}
+
 
 	@Override
 	public ArrayList<Pessoa> consultarTodos() {

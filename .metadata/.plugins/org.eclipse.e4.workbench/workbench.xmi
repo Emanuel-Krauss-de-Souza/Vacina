@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="ASCII"?>
 <application:Application xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:advanced="http://www.eclipse.org/ui/2010/UIModel/application/ui/advanced" xmlns:application="http://www.eclipse.org/ui/2010/UIModel/application" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_QdqkEewvEe6TG9BGwKtKWg" elementId="org.eclipse.e4.legacy.ide.application" contributorURI="platform:/plugin/org.jkiss.dbeaver.ui.app.standalone" selectedElement="_QdqkEuwvEe6TG9BGwKtKWg" bindingContexts="_QdqkFOwvEe6TG9BGwKtKWg">
-  <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;workbench>&#xD;&#xA;&lt;mruList>&#xD;&#xA;&lt;file factoryID=&quot;org.jkiss.dbeaver.ui.editors.NodeEditorInputFactory&quot; id=&quot;org.jkiss.dbeaver.ui.editors.entity.FolderEditor&quot; name=&quot;Connections&quot; tooltip=&quot;General conex&#xf5;es&quot;>&#xD;&#xA;&lt;persistable node=&quot;node://General/datasources&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.jkiss.dbeaver.ui.editors.sql.SQLEditor&quot; name=&quot;Script.sql&quot; tooltip=&quot;General/Scripts/Script.sql&quot;>&#xD;&#xA;&lt;persistable path=&quot;/General/Scripts/Script.sql&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;/mruList>&#xD;&#xA;&lt;/workbench>"/>
+  <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;workbench>&#xD;&#xA;&lt;mruList>&#xD;&#xA;&lt;file factoryID=&quot;org.jkiss.dbeaver.ui.editors.NodeEditorInputFactory&quot; id=&quot;org.jkiss.dbeaver.ui.editors.entity.FolderEditor&quot; name=&quot;Vacina&quot; tooltip=&quot;&quot;>&#xD;&#xA;&lt;persistable node=&quot;node://Vacina&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.jkiss.dbeaver.ui.editors.NodeEditorInputFactory&quot; id=&quot;org.jkiss.dbeaver.ui.editors.entity.FolderEditor&quot; name=&quot;Connections&quot; tooltip=&quot;General conex&#xf5;es&quot;>&#xD;&#xA;&lt;persistable node=&quot;node://General/datasources&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.jkiss.dbeaver.ui.editors.sql.SQLEditor&quot; name=&quot;Script.sql&quot; tooltip=&quot;General/Scripts/Script.sql&quot;>&#xD;&#xA;&lt;persistable path=&quot;/General/Scripts/Script.sql&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;/mruList>&#xD;&#xA;&lt;/workbench>"/>
   <tags>activeSchemeId:org.jkiss.dbeaver.defaultKeyScheme</tags>
   <children xsi:type="basic:TrimmedWindow" xmi:id="_QdqkEuwvEe6TG9BGwKtKWg" elementId="IDEWindow" contributorURI="platform:/plugin/org.jkiss.dbeaver.ui.app.standalone" selectedElement="_QqISwOwvEe6TG9BGwKtKWg" label="%trimmedwindow.label.dbeaver" x="0" y="0" width="1440" height="810">
     <persistedState key="coolBarVisible" value="true"/>
@@ -34,9 +34,10 @@
           <tags>persp.editorOnboardingCommand:Script SQL recente$$$Ctrl+Digitar</tags>
           <tags>persp.editorOnboardingCommand:Mostrar Assist&#xea;ncia a Teclas$$$Ctrl+Shift+L</tags>
           <tags>persp.editorOnboardingCommand:Find Actions$$$Ctrl+3</tags>
-          <children xsi:type="basic:PartSashContainer" xmi:id="_Qu6FEewvEe6TG9BGwKtKWg" selectedElement="_Qu6FGuwvEe6TG9BGwKtKWg" horizontal="true">
+          <children xsi:type="basic:PartSashContainer" xmi:id="_Qu6FEewvEe6TG9BGwKtKWg" selectedElement="_Qu6FEuwvEe6TG9BGwKtKWg" horizontal="true">
             <children xsi:type="basic:PartSashContainer" xmi:id="_Qu6FEuwvEe6TG9BGwKtKWg" containerData="3000" selectedElement="_Qu6FE-wvEe6TG9BGwKtKWg">
               <children xsi:type="basic:PartStack" xmi:id="_Qu6FE-wvEe6TG9BGwKtKWg" elementId="navigation" containerData="7000" selectedElement="_Qu6FFewvEe6TG9BGwKtKWg">
+                <tags>active</tags>
                 <children xsi:type="advanced:Placeholder" xmi:id="_Qu6FFOwvEe6TG9BGwKtKWg" elementId="org.jkiss.dbeaver.core.databaseNavigator" toBeRendered="false" ref="_QuwUEOwvEe6TG9BGwKtKWg" closeable="true">
                   <tags>View</tags>
                   <tags>categoryTag:Banco de dados</tags>
@@ -50,8 +51,8 @@
                   <tags>categoryTag:Gerais</tags>
                 </children>
               </children>
-              <children xsi:type="basic:PartStack" xmi:id="_Qu6FF-wvEe6TG9BGwKtKWg" elementId="bottomLeft" containerData="3000" selectedElement="_Qu6FGOwvEe6TG9BGwKtKWg">
-                <children xsi:type="advanced:Placeholder" xmi:id="_Qu6FGOwvEe6TG9BGwKtKWg" elementId="org.jkiss.dbeaver.core.projectExplorer" ref="_QuyJQOwvEe6TG9BGwKtKWg" closeable="true">
+              <children xsi:type="basic:PartStack" xmi:id="_Qu6FF-wvEe6TG9BGwKtKWg" elementId="bottomLeft" toBeRendered="false" containerData="3000">
+                <children xsi:type="advanced:Placeholder" xmi:id="_Qu6FGOwvEe6TG9BGwKtKWg" elementId="org.jkiss.dbeaver.core.projectExplorer" toBeRendered="false" ref="_QuyJQOwvEe6TG9BGwKtKWg" closeable="true">
                   <tags>View</tags>
                   <tags>categoryTag:Banco de dados</tags>
                 </children>
@@ -86,7 +87,7 @@
                   </children>
                 </children>
               </children>
-              <children xsi:type="basic:PartStack" xmi:id="_Qu6FJewvEe6TG9BGwKtKWg" elementId="bottomRight" containerData="3000" selectedElement="_FxC-cewxEe6DMIwF6L70_A">
+              <children xsi:type="basic:PartStack" xmi:id="_Qu6FJewvEe6TG9BGwKtKWg" elementId="bottomRight" toBeRendered="false" containerData="3000">
                 <tags>Banco de dados</tags>
                 <children xsi:type="advanced:Placeholder" xmi:id="_Qu6FJuwvEe6TG9BGwKtKWg" elementId="org.eclipse.pde.runtime.LogView" toBeRendered="false" ref="_QuywUOwvEe6TG9BGwKtKWg" closeable="true">
                   <tags>View</tags>
@@ -126,7 +127,7 @@
                   <tags>View</tags>
                   <tags>categoryTag:Banco de dados</tags>
                 </children>
-                <children xsi:type="advanced:Placeholder" xmi:id="_FxC-cewxEe6DMIwF6L70_A" elementId="org.jkiss.dbeaver.core.databaseBrowser:General|node~//General/datasources" ref="_FxC-cOwxEe6DMIwF6L70_A" closeable="true">
+                <children xsi:type="advanced:Placeholder" xmi:id="_FxC-cewxEe6DMIwF6L70_A" elementId="org.jkiss.dbeaver.core.databaseBrowser:General|node~//General/datasources" toBeRendered="false" ref="_FxC-cOwxEe6DMIwF6L70_A" closeable="true">
                   <tags>View</tags>
                   <tags>categoryTag:Banco de dados</tags>
                 </children>
@@ -149,18 +150,10 @@
       <tags>categoryTag:Gerais</tags>
     </sharedElements>
     <sharedElements xsi:type="advanced:Area" xmi:id="_QuvF8OwvEe6TG9BGwKtKWg" elementId="org.eclipse.ui.editorss" selectedElement="_QuvF8ewvEe6TG9BGwKtKWg">
-      <children xsi:type="basic:PartStack" xmi:id="_QuvF8ewvEe6TG9BGwKtKWg" elementId="org.eclipse.e4.primaryDataStack" selectedElement="_51AYUOwyEe6wqovcBMkj-Q">
+      <children xsi:type="basic:PartStack" xmi:id="_QuvF8ewvEe6TG9BGwKtKWg" elementId="org.eclipse.e4.primaryDataStack">
         <tags>org.eclipse.e4.primaryDataStack</tags>
         <tags>EditorStack</tags>
-        <tags>active</tags>
-        <children xsi:type="basic:Part" xmi:id="_51AYUOwyEe6wqovcBMkj-Q" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="Connections" iconURI="platform:/plugin/org.jkiss.dbeaver.ui/icons/properties.png" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.jkiss.dbeaver.ui.editors.entity.FolderEditor&quot; name=&quot;Connections&quot; partName=&quot;Connections&quot; title=&quot;Connections&quot; tooltip=&quot;General conex&#xf5;es&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.jkiss.dbeaver.ui.editors.NodeEditorInputFactory&quot; node=&quot;node://General/datasources&quot;/>&#xD;&#xA;&lt;/editor>"/>
-          <tags>Editor</tags>
-          <tags>removeOnHide</tags>
-          <tags>org.jkiss.dbeaver.ui.editors.entity.FolderEditor</tags>
-          <tags>active</tags>
-          <tags>activeOnClose</tags>
-        </children>
+        <tags>noFocus</tags>
       </children>
     </sharedElements>
     <sharedElements xsi:type="basic:Part" xmi:id="_QuwUEOwvEe6TG9BGwKtKWg" elementId="org.jkiss.dbeaver.core.databaseNavigator" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="Navegador de banco de dados" iconURI="platform:/plugin/org.jkiss.dbeaver.ui/icons/databases.png" tooltip="Exibe conex&#xf5;es de bancos de dados para o projeto ativo" closeable="true">
@@ -181,6 +174,8 @@
       <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;view/>"/>
       <tags>View</tags>
       <tags>categoryTag:Banco de dados</tags>
+      <tags>active</tags>
+      <tags>activeOnClose</tags>
       <menus xmi:id="_wxPjsOwwEe6DMIwF6L70_A" elementId="org.jkiss.dbeaver.core.projectNavigator">
         <tags>ViewMenu</tags>
         <tags>menuContribution:menu</tags>
@@ -193,7 +188,7 @@
       <tags>View</tags>
       <tags>categoryTag:Gerais</tags>
     </sharedElements>
-    <sharedElements xsi:type="basic:Part" xmi:id="_QuyJQOwvEe6TG9BGwKtKWg" elementId="org.jkiss.dbeaver.core.projectExplorer" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="Project - General" iconURI="platform:/plugin/org.jkiss.dbeaver.ui/icons/project.png" tooltip="Gerencia recursos de projetos: pastas, arquivos e recursos vinculados" closeable="true">
+    <sharedElements xsi:type="basic:Part" xmi:id="_QuyJQOwvEe6TG9BGwKtKWg" elementId="org.jkiss.dbeaver.core.projectExplorer" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="Project - Vacina" iconURI="platform:/plugin/org.jkiss.dbeaver.ui/icons/project.png" tooltip="Gerencia recursos de projetos: pastas, arquivos e recursos vinculados" closeable="true">
       <persistedState key="originalCompatibilityViewClass" value="org.jkiss.dbeaver.ui.navigator.project.ProjectExplorerView"/>
       <persistedState key="originalCompatibilityViewBundle" value="org.jkiss.dbeaver.ui.navigator"/>
       <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;view/>"/>
@@ -278,7 +273,7 @@
       <tags>View</tags>
       <tags>categoryTag:Banco de dados</tags>
     </sharedElements>
-    <sharedElements xsi:type="basic:Part" xmi:id="_FxC-cOwxEe6DMIwF6L70_A" elementId="org.jkiss.dbeaver.core.databaseBrowser:General|node~//General/datasources" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="Connections" iconURI="platform:/plugin/org.jkiss.dbeaver.ui/icons/database_navigator.png" tooltip="Navegar por elementos de conex&#xe3;o de banco de dados" closeable="true">
+    <sharedElements xsi:type="basic:Part" xmi:id="_FxC-cOwxEe6DMIwF6L70_A" elementId="org.jkiss.dbeaver.core.databaseBrowser:General|node~//General/datasources" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="Navegador de banco de dados" iconURI="platform:/plugin/org.jkiss.dbeaver.ui/icons/database_navigator.png" tooltip="Navegar por elementos de conex&#xe3;o de banco de dados" closeable="true">
       <persistedState key="originalCompatibilityViewBundle" value="org.jkiss.dbeaver.ui.navigator"/>
       <persistedState key="originalCompatibilityViewClass" value="org.jkiss.dbeaver.ui.navigator.database.DatabaseBrowserView"/>
       <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;view/>"/>
