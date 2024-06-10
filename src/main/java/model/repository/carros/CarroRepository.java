@@ -77,14 +77,14 @@ public class CarroRepository {
 				carro.setAno(resultado.getInt("ano"));
 				carro.setValor(resultado.getDouble("valor"));
  
-				int montadoraId = resultado.getInt("montadora_id");
+				int montadoraId = resultado.getInt("id_Montadora");
 				Montadora montadora = montadoraRepository.consultarPorId(montadoraId);
 				carro.setMontadora(montadora);
  
 				carros.add(carro);
 			}
 		} catch (SQLException erro) {
-			System.out.println("Erro ao consultar carros com filtro");
+			System.out.println("Erro ao consultar carros com filtros!");
 			System.out.println("Erro: " + erro.getMessage());
 		} finally {
 			Banco.closeResultSet(resultado);
