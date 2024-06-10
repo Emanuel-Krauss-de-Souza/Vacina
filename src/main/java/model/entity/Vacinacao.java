@@ -3,22 +3,24 @@ package model.entity;
 import java.time.LocalDate;
 
 public class Vacinacao {
-	
+
 	private int id;
-	private Pessoa pessoaAplicada;
+	private int idPessoa;
 	private Vacina vacina;
 	private LocalDate dataAplicacao;
 	private int avaliacao;
 	
+	
 	public Vacinacao() {
 		super();
+		// TODO Auto-generated constructor stub
 	}
 
-	public Vacinacao(int id, Pessoa pessoaAplicada, Vacina vacina, LocalDate dataAplicacao, int avaliacao) {
+	public Vacinacao(int id, int idPessoa, Vacina idVacina, LocalDate dataAplicacao, int avaliacao) {
 		super();
 		this.id = id;
-		this.pessoaAplicada = pessoaAplicada;
-		this.vacina = vacina;
+		this.idPessoa = idPessoa;
+		this.vacina = idVacina;
 		this.dataAplicacao = dataAplicacao;
 		this.avaliacao = avaliacao;
 	}
@@ -31,22 +33,23 @@ public class Vacinacao {
 		this.id = id;
 	}
 
-	public Pessoa getPessoaAplicada() {
-		return pessoaAplicada;
+	public int getIdPessoa() {
+		return idPessoa;
 	}
 
-	public void setPessoaAplicada(Pessoa pessoaAplicada) {
-		this.pessoaAplicada = pessoaAplicada;
+	public void setIdPessoa(int idPessoa) {
+		this.idPessoa = idPessoa;
 	}
 
 	public Vacina getVacina() {
 		return vacina;
 	}
 
-	public void setVacina(Vacina vacina) {
-		this.vacina = vacina;
+	public void setVacina(Vacina idVacina) {
+		this.vacina = idVacina;
 	}
 
+	
 	public LocalDate getDataAplicacao() {
 		return dataAplicacao;
 	}
@@ -62,7 +65,4 @@ public class Vacinacao {
 	public void setAvaliacao(int avaliacao) {
 		this.avaliacao = avaliacao;
 	}
-	
-	
-	
 }

@@ -3,27 +3,35 @@ package model.entity;
 import java.time.LocalDate;
 
 public class Vacina {
+
+	public static final int ESTAGIO_INICIAL = 1;
+	public static final int ESTAGIO_TESTES = 2;
+	public static final int ESTAGIO_APLICACAO_MASSA = 3;
+	
 	
 	private int id;
-	private String nome; 
-	private Pais paisOrigem;
+	private String nome;
 	private Pessoa pesquisadorResponsavel;
-	private LocalDate dataInicioPesquisa;
-	private int estagio;
+	private int estagioPesquisa;
+	private LocalDate dataInicio;
+	private Pais pais;
+	private double media;
 	
 	public Vacina() {
-		
+		super();
+		// TODO Auto-generated constructor stub
 	}
 
-	public Vacina(int id, String nome, Pais paisOrigem, Pessoa pesquisadorResponsavel, LocalDate dataInicioPesquisa,
-			int estagio) {
+	public Vacina(int id, String nome, Pessoa pesquisadorResponsavel, int estagioPesquisa,
+			LocalDate dataInicio, Pais pais, double media) {
 		super();
 		this.id = id;
 		this.nome = nome;
-		this.paisOrigem = paisOrigem;
 		this.pesquisadorResponsavel = pesquisadorResponsavel;
-		this.dataInicioPesquisa = dataInicioPesquisa;
-		this.estagio = estagio;
+		this.estagioPesquisa = estagioPesquisa;
+		this.dataInicio = dataInicio;
+		this.pais = pais;
+		this.media= media;
 	}
 
 	public int getId() {
@@ -42,13 +50,6 @@ public class Vacina {
 		this.nome = nome;
 	}
 
-	public Pais getPaisOrigem() {
-		return paisOrigem;
-	}
-
-	public void setPaisOrigem(Pais paisOrigem) {
-		this.paisOrigem = paisOrigem;
-	}
 
 	public Pessoa getPesquisadorResponsavel() {
 		return pesquisadorResponsavel;
@@ -58,19 +59,36 @@ public class Vacina {
 		this.pesquisadorResponsavel = pesquisadorResponsavel;
 	}
 
-	public LocalDate getDataInicioPesquisa() {
-		return dataInicioPesquisa;
+	public int getEstagioPesquisa() {
+		return estagioPesquisa;
 	}
 
-	public void setDataInicioPesquisa(LocalDate dataInicioPesquisa) {
-		this.dataInicioPesquisa = dataInicioPesquisa;
+	public void setEstagioPesquisa(int estagioPesquisa) {
+		this.estagioPesquisa = estagioPesquisa;
 	}
 
-	public int getEstagio() {
-		return estagio;
+	public LocalDate getDataInicio() {
+		return dataInicio;
 	}
 
-	public void setEstagio(int estagio) {
-		this.estagio = estagio;
+	public void setDataInicio(LocalDate dataInicio) {
+		this.dataInicio = dataInicio;
 	}
+
+	public Pais getPais() {
+		return pais;
+	}
+
+	public void setPais(Pais pais) {
+		this.pais = pais;
+	}
+
+	public double getMedia() {
+		return media;
+	}
+
+	public void setMedia(double media) {
+		this.media = media;
+	}
+
 }

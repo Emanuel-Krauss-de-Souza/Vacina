@@ -2,6 +2,7 @@ package controller;
 
 import java.util.List;
 
+import exception.VacinacaoException;
 import jakarta.ws.rs.Consumes;
 import jakarta.ws.rs.DELETE;
 import jakarta.ws.rs.GET;
@@ -12,15 +13,26 @@ import jakarta.ws.rs.PathParam;
 import jakarta.ws.rs.Produces;
 import jakarta.ws.rs.core.MediaType;
 import model.entity.Vacina;
+import model.entity.seletores.VacinaSeletor;
 import service.VacinaService;
+	
 
 @Path("/vacina")
 public class VacinaController {
-	
+
+
 	private VacinaService service = new VacinaService();
 	
+	
 	@POST
-	@Path("/salvar")
+	@Path("/filtro")
+	@Consumes(MediaType.APPLICATION_JSON)
+	@Produces(MediaType.APPLICATION_JSON)
+	public List<Vacina> consultarComFiltros(VacinaSeletor seletor){
+		 return service.consultarComFiltros(seletor);
+	}
+	
+	@POST
 	@Consumes(MediaType.APPLICATION_JSON)
 	@Produces(MediaType.APPLICATION_JSON)
 	public Vacina salvar(Vacina novaVacina){
@@ -28,6 +40,7 @@ public class VacinaController {
 	}
 	
 	@PUT
+	@Path("/atualizar")
 	@Consumes(MediaType.APPLICATION_JSON)
 	@Produces(MediaType.TEXT_PLAIN)
 	public boolean atualizar(Vacina vacinaEditada){
@@ -36,7 +49,7 @@ public class VacinaController {
 	
 	@DELETE
 	@Path("/{id}")
-	public boolean excluir(@PathParam("id") int id){
+	public boolean excluir(@PathParam("id") int id) throws VacinacaoException{
 		 return service.excluir(id);
 	}
 	
@@ -49,6 +62,22 @@ public class VacinaController {
 	@GET
 	@Path("/todas")
 	public List<Vacina> consultarTodas(){
-		 return service.consultarTodos();
+		 return service.consultarTodas();
 	}
+	
+	@POST
+	@Path("/contar")
+	@Consumes(MediaType.APPLICATION_JSON)
+	public int contarTotalRegistros(VacinaSeletor seletor) {
+		return this.service.contarTotalRegistros(seletor);
+	}
+	
+	
+	@POST
+	@Path("/total-paginas")
+	@Consumes(MediaType.APPLICATION_JSON)
+	public int contarPaginas(VacinaSeletor seletor) {
+		return this.service.contarPaginas(seletor);
+	} 
+	
 }

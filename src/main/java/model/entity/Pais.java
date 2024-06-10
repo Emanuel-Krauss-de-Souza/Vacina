@@ -8,15 +8,14 @@ public class Pais {
 	
 	public Pais() {
 		super();
-	
+		// TODO Auto-generated constructor stub
 	}
 
-	
-	public Pais(String nome, String sigla, int id) {
+	public Pais(int id, String nome, String sigla) {
 		super();
+		this.id = id;
 		this.nome = nome;
 		this.sigla = sigla;
-		this.id = id;
 	}
 
 	public int getId() {
@@ -26,7 +25,7 @@ public class Pais {
 	public void setId(int id) {
 		this.id = id;
 	}
-	
+
 	public String getNome() {
 		return nome;
 	}
@@ -42,4 +41,8 @@ public class Pais {
 	public void setSigla(String sigla) {
 		this.sigla = sigla;
 	}
+	
+	
+	
+
 }

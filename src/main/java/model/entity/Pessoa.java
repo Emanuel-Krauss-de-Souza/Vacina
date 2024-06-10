@@ -3,20 +3,26 @@ package model.entity;
 import java.time.LocalDate;
 
 public class Pessoa {
+	public static final int PESQUISADOR = 1;
+	public static final int VOLUNTARIO = 2;
+	public static final int PUBLICO_GERAL = 3;
 	
 	private int id;
 	private String nome;
 	private LocalDate dataNascimento;
-	private String sexo;
+	private char sexo;
 	private String cpf;
 	private int tipoPessoa;
 	private Pais pais;
-	
+//	private List<Vacinacao> vacinacoes;     
+		
 	public Pessoa() {
 		super();
+		// TODO Auto-generated constructor stub
 	}
 
-	public Pessoa(int id, String nome, LocalDate dataNascimento, String sexo, String cpf, int tipoPessoa, Pais pais) {
+	public Pessoa(int id, String nome, LocalDate dataNascimento, char sexo,
+			String cpf, int tipoPessoa, Pais pais) {
 		super();
 		this.id = id;
 		this.nome = nome;
@@ -24,9 +30,11 @@ public class Pessoa {
 		this.sexo = sexo;
 		this.cpf = cpf;
 		this.tipoPessoa = tipoPessoa;
+		this.pais = pais;
 	}
-	
-	
+
+
+
 	public int getId() {
 		return id;
 	}
@@ -51,11 +59,11 @@ public class Pessoa {
 		this.dataNascimento = dataNascimento;
 	}
 
-	public String getSexo() {
+	public char getSexo() {
 		return sexo;
 	}
 
-	public void setSexo(String sexo) {
+	public void setSexo(char sexo) {
 		this.sexo = sexo;
 	}
 
@@ -82,6 +90,7 @@ public class Pessoa {
 	public void setPais(Pais pais) {
 		this.pais = pais;
 	}
+
 	
 	
 }
