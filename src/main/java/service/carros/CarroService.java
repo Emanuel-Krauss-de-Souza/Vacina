@@ -50,11 +50,11 @@ public class CarroService {
  
 	    if (valorInicialPreenchido && !valorFinalPreenchido) {
 	    	
-	        throw new CarroException("AVISO: O valor inicial está preenchido, mas o valor final está vazio.");
+	        throw new CarroException("Erro: Falta preencher o valor final!");
 	        
 	    } else if (!valorInicialPreenchido && valorFinalPreenchido) {
 	    	
-	        throw new CarroException("AVISO: O valor final está preenchido, mas o valor inicial está vazio.");
+	        throw new CarroException("Erro: Falta preencher o valor inicial!");
 	        
 	    }
 	}
