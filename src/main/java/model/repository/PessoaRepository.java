@@ -22,8 +22,6 @@ public class PessoaRepository {
 		Connection conn = Banco.getConnection();
 		PreparedStatement psmt = Banco.getPreparedStatementWithPk(conn, query);
 		
-
-
 		try {
 			
 			psmt.setInt(1, novaPessoa.getPais().getId());
